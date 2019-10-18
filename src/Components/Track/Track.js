@@ -18,7 +18,6 @@ export class Track extends Component {
     }
 
     getButton() {
-        console.log(this.props.isRemoval)
         return this.props.isRemoval ? <button className="Track-action" onClick={this.removeTrack}>-</button> :
             <button className="Track-action" onClick={this.addTrack}>+</button>;
     }
